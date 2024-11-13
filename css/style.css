@@ -1,0 +1,92 @@
+body {
+  width: 100%;
+}
+body .buttons {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+@media (max-width: 768px) {
+  body .buttons {
+    position: sticky;
+    bottom: 0.5rem;
+    flex-direction: row;
+    padding: 0 0.7rem;
+  }
+}
+body .buttons .color-select {
+  text-transform: uppercase;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  border: 2px outset #000;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.8470588235);
+  margin: 0.5rem 0;
+}
+body .buttons .color-select:active {
+  border: none;
+  box-shadow: none;
+}
+@media (max-width: 768px) {
+  body .buttons .color-select {
+    margin: 0.5rem;
+  }
+}
+body .buttons .vert {
+  background-color: #17830a;
+}
+body .buttons .vert:active {
+  background-color: #17830a;
+}
+body .buttons .jaune {
+  background-color: #d8d20e;
+}
+body .buttons .jaune:active {
+  background-color: #d8d20e;
+}
+body .buttons .bleu {
+  background-color: #1f36cf;
+}
+body .buttons .bleu:active {
+  background-color: #1f36cf;
+}
+body .buttons .rouge {
+  background-color: #b41616;
+}
+body .buttons .rouge:active {
+  background-color: #b41616;
+}
+body .buttons .noir {
+  background-color: #000;
+}
+body .buttons .noir:active {
+  background-color: #000;
+}
+body .buttons .blanc {
+  background-color: #fff;
+}
+body .buttons .blanc:active {
+  background-color: #fff;
+}
+body .plato {
+  background-color: grey;
+  border-radius: 20px;
+  border: 2px outset #000;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.8470588235);
+}
+body .plato .trou {
+  border-radius: 50%;
+  background-color: #555a5f;
+  width: 12%;
+  border: 1px solid rgba(0, 0, 0, 0.5490196078);
+}
+body .plato .case {
+  border: 2px solid brown;
+  border-radius: 10px;
+  width: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */
