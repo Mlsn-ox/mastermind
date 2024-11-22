@@ -1,6 +1,108 @@
 body {
   width: 100%;
 }
+body .titre {
+  text-shadow: 2px 2px 2px #000;
+}
+body .audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body .infobulle {
+  width: 30%;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8156862745);
+  border-radius: 25px;
+  top: 20vh;
+  left: 35%;
+  box-shadow: 0 3px 10px 1px #252525;
+}
+body .infobulle button {
+  width: 50%;
+  min-width: 300px;
+  height: 4rem;
+  font-size: 1.5rem;
+  box-shadow: 0 3px 10px 1px #252525;
+}
+body .debut {
+  display: block;
+  color: black;
+}
+body .debut h3 {
+  color: black;
+}
+body .victory {
+  display: none;
+}
+body .loose {
+  display: none;
+}
+@media (max-width: 1000px) {
+  body .infobulle {
+    width: 100%;
+    left: 0;
+  }
+}
+body .plato {
+  background-color: grey;
+  border-radius: 20px;
+  border: 2px outset #000;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.8470588235);
+}
+body .plato .trou {
+  border-radius: 50%;
+  background-color: #555a5f;
+  width: 12%;
+  border: 1px solid rgba(0, 0, 0, 0.5490196078);
+  box-shadow: inset -2px -2px 7px #252525;
+}
+body .plato .case {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 0.2rem;
+  flex-wrap: wrap;
+  border: 2px solid brown;
+  border-radius: 10px;
+  width: 20%;
+}
+body .plato .case span {
+  height: 35%;
+  width: 35%;
+  border-radius: 50%;
+}
+body .plato .case button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: brown;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.6431372549);
+  box-shadow: 1px 1px 5px #252525;
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body .plato .case p {
+  color: brown;
+  margin: 0;
+  text-shadow: 1px 1px 1px rgba(34, 34, 34, 0.6431372549);
+}
+body .plato .case p + p {
+  color: #fff;
+  text-shadow: 1px 1px 1px #222;
+}
+@media (max-width: 1000px) {
+  body .plato .case {
+    flex-direction: row;
+    align-items: center;
+  }
+  body .plato .case p {
+    font-size: 1.2rem;
+  }
+}
 body .buttons {
   position: fixed;
   top: 10%;
@@ -14,7 +116,6 @@ body .buttons {
     position: sticky;
     bottom: 0.5rem;
     flex-direction: row;
-    padding: 0 0.7rem;
   }
 }
 body .buttons .color-select {
@@ -70,23 +171,6 @@ body .buttons .blanc {
 }
 body .buttons .blanc:active {
   background-color: #fff;
-}
-body .plato {
-  background-color: grey;
-  border-radius: 20px;
-  border: 2px outset #000;
-  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.8470588235);
-}
-body .plato .trou {
-  border-radius: 50%;
-  background-color: #555a5f;
-  width: 12%;
-  border: 1px solid rgba(0, 0, 0, 0.5490196078);
-}
-body .plato .case {
-  border: 2px solid brown;
-  border-radius: 10px;
-  width: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
