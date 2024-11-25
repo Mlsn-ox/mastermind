@@ -104,7 +104,7 @@ buttons.forEach((button) => {
 // Victoire du joueur
 function cestgagne() {
   reponse[iRep].innerHTML = window.matchMedia("(min-width: 1000px)").matches
-    ? `<p>Victory</p>`
+    ? `<p>Victoire</p>`
     : `<p>GG</p>`;
   victoire.style.display = "block";
   buttons.forEach((button) => {
@@ -155,6 +155,8 @@ function makeReset() {
     let modulo = playerCode.length % 4;
     for (let a = 1; a <= modulo; a++) {
       trous[playerCode.length - a].style.backgroundColor = "#555a5f";
+      trous[playerCode.length - a].style.boxShadow =
+        "inset -2px -2px 7px #252525";
     }
     playerCode.length -= modulo;
   });

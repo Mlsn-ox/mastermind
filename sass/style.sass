@@ -2,6 +2,7 @@ body
     width: 100%
     .titre
         text-shadow: 2px 2px 2px #000
+        font-variant: small-caps
     .audiowide-regular
         font-family: "Audiowide", sans-serif
         font-weight: 400
@@ -14,12 +15,17 @@ body
         top: 20vh
         left: 35%
         box-shadow: 0 3px 10px 1px #252525
+        h3
+            font-variant: small-caps
+        span
+            color: brown
         button
             width: 50%
             min-width: 300px
             height: 4rem
             font-size: 1.5rem
             box-shadow: 0 3px 10px 1px #252525
+            font-variant: small-caps
     .debut
         display: block
         color: black
@@ -96,16 +102,19 @@ body
         .color-select
             text-transform: uppercase
             border-radius: 50%
-            width: 3rem
-            height: 3rem
+            width: 4rem
+            height: 4rem
             border: 2px outset #000
             box-shadow: 2px 3px 8px #000000d8
             margin: 0.5rem 0
+            color: transparent
             &:active
                 border: none
                 box-shadow: none
             @media (max-width: 768px)
                 margin: 0.5rem
+                width: 3rem
+                height: 3rem
         .vert
             background-color: #17830a
             &:active
